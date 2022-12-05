@@ -16,3 +16,10 @@ hls-streaming-playground
           -use_timeline 1 -use_template 1 -window_size 5 -adaptation_sets "id=0,streams=v id=1,streams=a" \
           -f dash live.mpd
     ```
+- [Creating dash mpd files with ffmpeg - YouTube](https://www.youtube.com/watch?v=GBHYdCrWJOQ)
+- [dash - FFmpeg](http://underpop.online.fr/f/ffmpeg/help/dash-2.htm.gz)
+- [Convert MP4 videos to HLS format in Windows using FFmpeg - YouTube](https://www.youtube.com/watch?v=qKP1Zv79Q2c)
+- [FFMPEG MP4 to HLS Conversion.md](https://gist.github.com/lukebussey/4d27678c72580aeb660c19a6fb73e9ee)
+  - ```sh
+    ffmpeg -i filename.mp4 -codec: copy -start_number 0 -hls_time 10 -hls_list_size 0 -f hls filename.m3u8
+    ```
